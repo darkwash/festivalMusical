@@ -1,0 +1,34 @@
+{
+  "name": "festivalmusica",
+  "version": "1.0.0",
+  "description": "Aprendiendo SASS y NPM",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "hola": "gulp hola"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkwash/festivalmusical.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "GULP"
+  ],
+  "author": "Hector Vazquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darkwash/festivalmusical/issues"
+  },
+  "homepage": "https://github.com/darkwash/festivalmusical#readme",
+  "devDependencies": {
+    "eslint-config-manzdev": "^0.0.8",
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.2",
+    "stylelint": "^16.8.1",
+    "stylelint-config-manzdev": "^0.0.18"
+  }
+}
