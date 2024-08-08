@@ -2,3 +2,6 @@
 .vscode
 node_modules
 .stylelintrc.json
+build/
+pnpm-lock.yaml
+package-lock.json
