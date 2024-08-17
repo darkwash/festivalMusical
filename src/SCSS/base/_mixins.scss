@@ -1,0 +1,5 @@
+@mixin telefono {
+  @media (width >= 768px){
+    @content;
+  }
+}
