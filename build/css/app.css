@@ -374,7 +374,28 @@ body > section {
 .header {
   background-color: #4cb8b3;
 }
+@media (width >= 480px) {
+  .header {
+    color: white;
+    width: 10px;
+    height: 1px;
+  }
+}
 @media (width >= 768px) {
+  .header {
+    color: white;
+    width: 10px;
+    height: 1px;
+  }
+}
+@media (width >= 1200px) {
+  .header {
+    color: white;
+    width: 10px;
+    height: 1px;
+  }
+}
+@media (width >= 1400px) {
   .header {
     color: white;
     width: 10px;
@@ -383,18 +404,35 @@ body > section {
 }
 .header .contenido-header {
   padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+@media (width >= 768px) {
+  .header .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .header h1 {
   color: #fff;
-  margin: 0;
+  text-align: center;
+}
+@media (width >= 768px) {
+  .header h1 {
+    margin: 0;
+    text-align: left;
+  }
 }
 
 .navegacion-principal {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 2rem;
+}
+@media (width >= 768px) {
+  .navegacion-principal {
+    flex-direction: row;
+  }
 }
 .navegacion-principal a {
   color: #fff;
@@ -403,3 +441,210 @@ body > section {
 .navegacion-principal a:hover {
   color: #fdda00;
 }
+
+.video {
+  position: relative;
+  min-height: 50rem;
+  max-height: 70rem;
+  overflow: hidden;
+}
+.video .overlay {
+  position: absolute;
+  background: linear-gradient(270deg, rgba(117, 47, 151, 0.6), rgba(57, 23, 73, 0.9));
+  inset: 0;
+  display: flex;
+  align-items: center;
+}
+.video video {
+  display: block;
+  width: auto;
+}
+@media (width >= 1200px) {
+  .video video {
+    width: 100%;
+  }
+}
+
+.contenido-video {
+  z-index: -1;
+}
+.contenido-video h2 {
+  color: #fff;
+  font-size: 7rem;
+  margin: 0;
+}
+.contenido-video p {
+  background-color: #f53756;
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.sobre-festival {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (width >= 768px) {
+  .sobre-festival {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.contenido-festival {
+  margin-top: 5rem;
+}
+.contenido-festival h2 {
+  margin-bottom: 2rem;
+}
+.contenido-festival .fecha {
+  color: #4cb8b3;
+}
+
+.lineup {
+  background-color: #f53756;
+}
+.lineup h3, .lineup .dia {
+  text-align: center;
+  color: #fff;
+}
+.lineup .dia {
+  font-size: 3rem;
+}
+
+.escenarios-contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (width >= 768px) {
+  .escenarios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.escenario {
+  padding-top: 2rem;
+}
+.escenario .nombre-escenario {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.calendario {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  padding: 2.5rem;
+  font-weight: 700;
+}
+li span {
+  font-weight: 700;
+}
+
+.bg-amarillo {
+  background-color: #fdda00;
+}
+.bg-amarillo li:nth-child(odd) {
+  background-color: #ffdf18;
+}
+
+.bg-verde {
+  background-color: #4cb8b3;
+}
+.bg-verde li:nth-child(odd) {
+  background-color: #5ebfbb;
+}
+
+.contenedor-boletos {
+  background-color: #4cb8b3;
+}
+.contenedor-boletos h3 {
+  color: #fff;
+}
+@media (width >= 768px) {
+  .contenedor-boletos .boletos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.pase {
+  transition: transform 0.3s ease-in-out;
+}
+.pase:hover {
+  transform: scale(1.1);
+}
+.pase-nombre {
+  font-size: 3.6rem;
+  font-weight: 900;
+  text-align: center;
+  color: #fff;
+}
+.pase-header, .pase-footer {
+  padding: 5rem;
+}
+.pase-header p, .pase-footer p {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+.pase-header {
+  background-color: #f53756;
+}
+.pase-header p {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+.pase-body {
+  background-color: #fff;
+}
+.pase-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pase-body ul li {
+  padding: 2rem;
+  border-bottom: 2px solid #e1e1e1;
+}
+.pase-footer {
+  background-color: #fff;
+  padding: 3rem;
+}
+.pase-footer p {
+  transition: background-color 0.3s ease-in-out;
+  font-size: 2.8rem;
+  font-weight: 900;
+  background-color: #752F97;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.pase-footer p:hover {
+  background-color: #391749;
+}
+
+.footer {
+  padding: 2rem 0;
+  background-color: #f53756;
+}
+.footer p {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}/*# sourceMappingURL=app.css.map */
