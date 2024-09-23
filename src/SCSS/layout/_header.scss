@@ -4,6 +4,7 @@
 .header{
   background-color: v.$verde;
 
+<<<<<<< HEAD
   &.fixed{
     position: fixed;
     left: 0;
@@ -38,6 +39,31 @@
   //   width: 10px;
   //   height: 1px;
   // }
+=======
+  @include m.telefono{
+    color:white;
+    width: 10px;
+    height: 1px;
+  }
+
+  @include m.tablet{
+    color:white;
+    width: 10px;
+    height: 1px;
+  }
+
+  @include m.desktop{
+    color:white;
+    width: 10px;
+    height: 1px;
+  }
+
+  @include m.desktopXL{
+    color:white;
+    width: 10px;
+    height: 1px;
+  }
+>>>>>>> f8a7dd85970f78d32b0ed2f5166db623e0f19771
 
   .contenido-header{
     padding: 2rem;
