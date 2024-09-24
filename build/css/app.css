@@ -403,6 +403,7 @@ body > section {
 }
 @media (width >= 768px) {
   .header h1 {
+    text-align: center;
     margin: 0;
   }
 }
