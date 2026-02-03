@@ -32,6 +32,6 @@
     "stylelint-config-manzdev": "^0.0.18"
   },
   "dependencies": {
-    "npm": "^10.8.2"
+    "npm": "^11.1.0"
   }
 }
